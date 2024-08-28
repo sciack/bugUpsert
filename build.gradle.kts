@@ -11,6 +11,10 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
+    testImplementation(libs.exposed.core)
+    testImplementation(libs.exposed.jdbc)
+    testImplementation(libs.pgsql.container)
+    testImplementation(libs.postgresql)
 }
 
 tasks.test {
